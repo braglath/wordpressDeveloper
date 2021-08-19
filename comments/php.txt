@@ -1,0 +1,23 @@
+echo - to display something
+
+bloginfo('name') - name of our page
+bloginfo('description') - description of out page
+
+have_post() - number of posts
+
+while(have_post()){
+the_post() - post we have
+10 most recent posts will be displayed
+the_permalink() -links that will take you to the post
+the_title() - titles of our post
+the_content() - contents in the post
+the_date() - date of the post
+the_time() - time of the post
+}
+
+#############
+when you click on a post, it will take you to that post in-detail if you
+have the_permalink tagged. you can make a single.php file and now when the
+post is clicked then the single.php page will be loaded instead of showing
+the post
+#############
