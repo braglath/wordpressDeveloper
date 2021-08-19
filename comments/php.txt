@@ -1,8 +1,10 @@
 echo - to display something
 
-bloginfo('name') - name of our page
-bloginfo('description') - description of out page
+bloginfo('name') - name of our website
+bloginfo('description') - description of our website
 
+
+######### POSTS #########
 have_post() - number of posts
 
 while(have_post()){
@@ -16,8 +18,18 @@ the_time() - time of the post
 }
 
 #############
+
+create a single.php file inside the root/main folder
+
 when you click on a post, it will take you to that post in-detail if you
 have the_permalink tagged. you can make a single.php file and now when the
 post is clicked then the single.php page will be loaded instead of showing
 the post
+
+wordpress uses the single.php file only for individual post and not for pages
 #############
+
+
+#### PAGES #####
+wordpress uses the single.php file only for individual post and not for pages
+for pages we need page.php in the root/main folder
