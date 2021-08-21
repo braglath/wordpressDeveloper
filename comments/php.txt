@@ -33,3 +33,18 @@ wordpress uses the single.php file only for individual post and not for pages
 #### PAGES #####
 wordpress uses the single.php file only for individual post and not for pages
 for pages we need page.php in the root/main folder
+
+######## Header Footer #####
+get_header(); - this gets the contents from header.php file
+
+wp_head(); - this is to link css file 
+we have to create functions.php 
+in fuctions.php, inside php function add_action();
+this takes in 2 arguments and it tags a function
+first argument - what type of instruction we are giving - wp_enqueue_scripts
+second - function we created and want to run
+then create a function in the name of the second argument we just named and inside the 
+function add
+wp_enqueue_style('university_main_styles', get_stylesheey_uri());
+
+get_theme_file_uri('path of the css file') - to link a css file
